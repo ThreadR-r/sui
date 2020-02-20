@@ -1,5 +1,5 @@
 ## SUI
-*a startpage for your server and / or new tab page*
+*a startpage for your server and / or new tab page*  
 *Project inspired from fork source, i.e: https://github.com/jeroenpardon/sui and https://github.com/circa10a/Device-Monitor-Dashboard for the python part*
 
 ![screenshot](https://i.imgur.com/J4d7Q3D.png)
