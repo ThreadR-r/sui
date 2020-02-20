@@ -15,7 +15,7 @@
 #### Install:
 
  - `git clone` this repository
- - set a cron job with "*/2 * * * * cd /usr/share/nginx/html/ && /usr/bin/python report.py &> /dev/null"
+ - set a cron job with `*/2 * * * * cd /usr/share/nginx/html/ && /usr/bin/python report.py &> /dev/null`
  - The page should be available at  `http://localhost:4000` 
 
 ### Customization
