@@ -40,10 +40,10 @@ def parsehost(hostfile):
                     print("%s Port: %s is not a number!" % (item["name"], item["port"]))
                     sys.exit()
 
-                if item["hostname"]:
+                if 'hostname' in item:
                     servers.append({"hostname": item["hostname"], "port": item["port"], "name": item["name"], "href": item["href"], "icon": item["icon"]})
                 else:
-                    servers.append({"hostname": "127.0.0.1", "port": item["port"], "name": item["name"], "href": item["href"], "icon": ite["icon"]})
+                    servers.append({"hostname": "127.0.0.1", "port": item["port"], "name": item["name"], "href": item["href"], "icon": item["icon"]})
     return servers
 
 def updateInformations(output, host_dict):
