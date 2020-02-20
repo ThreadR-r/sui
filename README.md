@@ -1,5 +1,6 @@
 ## SUI
 *a startpage for your server and / or new tab page*
+*Project inspired from fork source, i.e: https://github.com/jeroenpardon/sui and https://github.com/circa10a/Device-Monitor-Dashboard for the python part*
 
 ![screenshot](https://i.imgur.com/J4d7Q3D.png)
 
@@ -8,19 +9,14 @@
 ### Deploy with Docker compose
 
 #### Prerequisites:
- - Docker: [Linux](https://docs.docker.com/install/linux/docker-ce/debian/), [Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac), [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
- - [Docker-compose](https://docs.docker.com/compose/install/) 
+- python
+- web server
 
 #### Install:
 
  - `git clone` this repository
- - Build and bring up with `docker-compose up -d`
+ - set a cron job with "*/2 * * * * cd /usr/share/nginx/html/ && /usr/bin/python report.py &> /dev/null"
  - The page should be available at  `http://localhost:4000` 
-
-To run at a different port open edit docker-compose.yml:
-
-    ports:
-          - 4000:80
 
 ### Customization
 
@@ -81,7 +77,6 @@ Add names for the categories you wish to define and add the bookmarks for each c
 
 Please note:
 
- - No `http://` in the URL
  - No `,` at the end of the last bookmark in a category and at the end of the last category
 
 
